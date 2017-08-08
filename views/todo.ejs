@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Happy Friendship Day</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+     <script src="/assets/todo-list.js"></script>
+  </head>
+  <body>
+    <h1><marquee>Satyajit wishes you a Happy Friendship Day</marquee></h1>
+    <div id="todo-table">
+      <form >
+        <h3>Wish Satyajit. Please Write your name at the end of the message:<h3>
+        <input type="text" name="item" placeholder="Write something  for Satyajit" required />
+        <button type="submit">Wish Him</button>
+      </form>
+      <ul>
+      <% for(var i=0;i<todos.length;i++){%>
+          <li><%=  todos[i].item %></li>
+
+      <%  }  %>
+      </ul>
+    </div>
+
+  </body>
+</html>
